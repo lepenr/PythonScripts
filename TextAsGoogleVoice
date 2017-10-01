@@ -1,0 +1,8 @@
+#Save text as a Google voice
+
+import speech_recognition as sr
+from gtts import gTTS
+
+def speak(audioString):
+    tts = gTTS(text='Hello World', lang='en')
+    tts.save("Test_audio.mp3")
